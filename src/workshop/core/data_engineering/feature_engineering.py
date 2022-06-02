@@ -88,7 +88,7 @@ def main(args):
                                            tripDistance>0 and tripDistance<75 and \
                                            passengerCount>0 and passengerCount<100 and \
                                            totalAmount>0")
-    final_df, test_df = train_test_split(final_df, test_size=0.2, random_state=100)
+    final_df, test_df = train_test_split(final_df, test_size=0.25, random_state=100)
     os.makedirs(args.prep_data, exist_ok=True)
     
     if args.run_mode =='local':
